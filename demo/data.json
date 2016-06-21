@@ -1,0 +1,18 @@
+{
+  "code": 0,
+  "list": [
+    {"key": "1", "title": "小米5"},
+    {"key": "2", "title": "小米Note"},
+    {"key": "3", "title": "小米4S"},
+    {"key": "4", "title": "红米Note 3"},
+    {"key": "5", "title": "红米Note 2"},
+    {"key": "6", "title": "小米4c"},
+    {"key": "7", "title": "小米4"},
+    {"key": "8", "title": "小米手环"},
+    {"key": "9", "title": "小米空气净化器"},
+    {"key": "10", "title": "小米平衡车"},
+    {"key": "11", "title": "小米平板"},
+    {"key": "12", "title": "小米平板"},
+    {"key": "13", "title": "小米电饭煲"}
+  ]
+}

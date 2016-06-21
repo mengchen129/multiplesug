@@ -1,0 +1,113 @@
+@charset "UTF-8";
+.sug-wrap {
+    border: 1px solid #ccc;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.sug-input-wrap {
+    padding: 5px;
+    background-color: #eeeeee;
+    overflow: hidden;
+    min-width: 100px;
+}
+
+.sug-input {
+    border: none !important;
+    outline: 0 !important;
+    border-radius: 5px !important;
+    height: 18px !important;
+    font-size: inherit !important;
+    line-height: 18px !important;
+    width: 100% !important;
+    padding: 0 5px !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+}
+
+.sug-selected {
+    float: left;
+    padding-top: 5px;
+}
+
+.sug-selected-item, .sug-copy {
+    padding: 1px 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.sug-copy {
+    color: #aaaaaa;
+    cursor: pointer;
+    display: none;
+}
+
+.sug-copy:hover {
+    color: inherit;
+}
+
+.sug-info-tip {
+    padding: 5px;
+    background-color: #ecffdf;
+    border: 1px solid #62c633;
+    margin-top: 5px;
+    display: none;
+}
+
+.sug-info-tip.info {
+    background-color: #dff2fe;
+    border-color: #54b1fe;
+}
+
+.sug-info-tip a {
+    margin-left: 5px;
+    text-decoration: underline;
+    color: blue;
+}
+
+.sug-remove {
+    float: right;
+    cursor: pointer;
+    margin-left: 5px;
+    color: #aaa;
+}
+
+.sug-remove:hover {
+    color: #FB9337;
+}
+
+.sug-text-muted {
+    color: #aaa;
+}
+
+.suggestion-item, .suggestion-item-empty {
+    list-style: none;
+    padding: 3px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.suggestion-item:hover {
+    background-color: #FB9337;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.suggestion-item.selected {
+    background-color: #FB9337;
+    color: #ffffff;
+}
+
+.suggestion-container {
+    border: 1px solid #aaa;
+}
+
+.suggestion-list {
+    position: absolute;
+    z-index: 100;
+}
