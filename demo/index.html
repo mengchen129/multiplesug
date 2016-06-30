@@ -15,8 +15,8 @@
 
 <div id="sug"></div>
 
+<!-- 模块模式 -->
 <script src="../lib/deps/jquery-1.11.1.min.js"></script>
-<script src="../lib/deps/underscore-min.js"></script>
 <script src="../lib/jquery.multiplesug.js"></script>
 <script>
     $(function() {
@@ -24,6 +24,28 @@
             url: 'data.json',
             placeholder: '输入关键字检索',
             jsonReader: function(data) {return data.list;}
+        });
+    });
+</script>
+
+<!-- AMD模式 -->
+<script src="../lib/deps/requirejs-2.2.0.min.js"></script>
+<script>
+    requirejs.config({
+        baseUrl: '../lib',
+        paths: {
+            'jquery': 'deps/jquery-1.11.1.min',
+            'multiplesug': 'jquery.multiplesug'
+        }
+    });
+
+    require(['multiplesug'], function($) {
+        $(function() {
+            $('#sug').multiplesug({
+                url: 'data.json',
+                placeholder: '输入关键字检索',
+                jsonReader: function(data) {return data.list;}
+            });
         });
     });
 </script>
